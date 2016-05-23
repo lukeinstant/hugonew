@@ -1,0 +1,1 @@
+<?php $product_id = 5; $objectManager = \Magento\Framework\App\ObjectManager::getInstance(); $product = $objectManager->get('Magento\Catalog\Model\Product')->load($product_id); echo $product->getShortDescription(); echo $product->getDescription(); echo $product->getName(); echo $product->getPrice(); echo $product->getSpecialPrice(); echo $product->getProductUrl(); ?>

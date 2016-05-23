@@ -1,0 +1,26 @@
+@CHARSET "ISO-8859-1";
+.faq > ul {
+   list-style: none;
+   padding: 0;
+}
+.faq > ul li {
+   padding: 5px 5px;
+   margin: 0;
+   background-color: #fff;
+   border-bottom: 1px #c4c1bc solid;
+   display: inline-block;
+   width: 100%;
+}
+.faq > ul li:last-child {
+   border-bottom: none;
+}
+.faq-list {
+   float: left;
+   position: relative;
+   margin-left: 10px;
+   width: 100%;
+}
+.toolbar {
+    text-align: center;
+    margin-bottom: 0px !important;
+}

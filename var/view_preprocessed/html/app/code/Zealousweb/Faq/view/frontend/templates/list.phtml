@@ -1,0 +1,25 @@
+<?php /** @var $block \Ashsmith\Blog\Block\PostList */ ?> <div class="faq-sec"><h2>Frequently Asked Questions</h2><div class="container"><div class="accordion faq-post-list"><?php $faqCollection = $block->getCollection(); if ($faqCollection->getSize() > 0) { ?> <?php /** @var $post \Ashsmith\Blog\Model\Post */ ?> <?php $i=1; ?> <?php foreach ($block->getCollection() as $faq): ?> <div class="accordion-section"><a class="accordion-section-title" href="#accordion-<?php echo $i; ?>"><?php echo $faq->getTitle()?></a> <div id="accordion-<?php echo $i; ?>" class="accordion-section-content"><?php echo $faq->getDescription(); ?></div></div><?php $i++;?> <?php endforeach; ?> <?php } else { ?> <p><?php echo __('Currently There is no Faqs!') ?></p><?php } ?></div></div></div><script type="text/javascript">
+	jQuery(document).ready(function() {
+	function close_accordion_section() {
+		jQuery('.accordion .accordion-section-title').removeClass('active');
+		jQuery('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+	}
+
+	jQuery('.accordion-section-title').click(function(e) {
+		
+		var currentAttrValue = jQuery(this).attr('href');
+
+		if(jQuery(e.target).is('.active')) {
+			close_accordion_section();
+		}else {
+			close_accordion_section();
+
+			
+			jQuery(this).addClass('active');
+			
+			jQuery('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+		}
+
+		e.preventDefault();
+	});
+});</script>
