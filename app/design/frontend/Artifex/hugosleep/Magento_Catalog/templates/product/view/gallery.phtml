@@ -1,0 +1,178 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * Product media data template
+ *
+ * @var $block \Magento\Catalog\Block\Product\View\Gallery
+ */
+?>
+<style type="text/css">
+.owl-carousel.owl-loaded{
+	display:block;
+}
+</style>
+<h2 class="gallery-title">Because size matters…</h2>
+<!--
+<div class="gallery-placeholder _block-content-loading" data-gallery-role="gallery-placeholder">
+    <div data-role="loader" class="loading-mask">
+        <div class="loader">
+            <img src="<?php /* @escapeNotVerified */ echo $block->getViewFileUrl('images/loader-1.gif'); ?>"
+                 alt="<?php /* @escapeNotVerified */ echo __('Loading...') ?>">
+        </div>
+    </div>
+</div>
+-->
+<div class="more-views">
+	<div id="thumbnail-slider">		 
+		<div class="inner">
+					<ul class="product-image-thumbs loop owl-carousel">
+					 
+						<li class="item " id="art-1">
+							<a class="" title="">
+								<img src="<?php echo $block->getViewFileUrl('images/mattress_cutout_1.png'); ?>" alt="" />
+							</a>
+						</li>
+						<li class="item " id="art-2">
+							<a class="" title="">
+								<img src="<?php echo $block->getViewFileUrl('images/mattress_cutout_1.png'); ?>" alt="" />
+							</a>
+						</li>
+						<li class="item " id="art-3">
+							<a class="" title="">
+								<img src="<?php echo $block->getViewFileUrl('images/mattress_cutout_1.png'); ?>" alt="" />
+							</a>
+						</li>
+						<li class="item " id="art-4">
+							<a class="" title="">
+								<img src="<?php echo $block->getViewFileUrl('images/mattress_cutout_1.png'); ?>" alt="" />
+							</a>
+						</li>
+						<li class="item " id="art-5">
+							<a class="" title="">
+								<img src="<?php echo $block->getViewFileUrl('images/mattress_cutout_1.png'); ?>" alt="" />
+							</a>
+						</li>
+					</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+		setTimeout(function () {
+		/*jQuery('.loop').owlCarousel({
+			center: true,
+			items:2,
+			loop:true,
+			margin:10,
+			nav:false,
+			autoHeight:true,
+			dots: false,
+			responsive:{
+				600:{
+					items:2
+				}
+			}
+		});*/
+		 var $sync1 = jQuery(".loop"),
+            flag = false,
+            duration = 300;
+			
+		$sync1.owlCarousel({
+			center: true,
+			items: 2,
+			loop:false,
+			startPosition: 1,
+			margin: 20,
+			nav: false,
+			dots: false,
+			autoHeight: true,
+			responsive:{
+				600:{
+					items:2
+				}
+			},
+		}).on('click', '.owl-item', function () {
+			$sync1.trigger('to.owl.carousel', [jQuery(this).index(), duration, true]);
+		}).on('changed.owl.carousel', function (e) {
+			if (!flag) {
+				flag = true;
+				$sync1.trigger('to.owl.carousel', [e.item.index, duration, true]);
+				flag = false;
+			}
+		});
+	}, 500);
+	
+	jQuery(document).ready(function() {
+		setTimeout(function () {
+			window.setInterval(function(){
+				var inHei = jQuery("#thumbnail-slider .inner .loop").innerHeight();
+				jQuery("#thumbnail-slider .inner .loop .owl-controls .owl-nav").children("div").css("height",inHei+"px");
+			}, 5);
+			jQuery("#thumbnail-slider .inner .loop .owl-stage-outer .owl-stage .owl-item").each(function(i) {
+				var cls = jQuery(this).children("div.item").attr("class");
+				if(jQuery(this).hasClass("cloned")){	
+				}else{
+					jQuery(this).addClass(cls);
+				}
+			});			
+		}, 510);
+    });
+	 
+	jQuery(window).resize(function() {
+        var inHei = jQuery("#thumbnail-slider .inner .loop").innerHeight();
+		jQuery("#thumbnail-slider .inner .loop .owl-controls .owl-nav").children("div").css("height",inHei+"px");
+    });	
+
+
+	jQuery(window).load(function() {
+		var j=2;
+		jQuery("#product-options-wrapper .swatch-attribute-options .swatch-option").each( function(){
+			jQuery(this).attr("data-id",j).addClass("artifex");
+			j++;					 
+		});
+		jQuery(".swatch-option.artifex").click(function(){
+			var divid = jQuery(this).attr("data-id");
+			jQuery(".loop").trigger('to.owl.carousel', [jQuery(this).index()+1, 300, true]);   
+		}); 
+		
+	});  
+	 
+</script>
+<script type="text/x-magento-init">
+    {
+        "[data-gallery-role=gallery-placeholder]": {
+            "mage/gallery/gallery": {
+                "mixins":["magnifier/magnify"],
+                "magnifierOpts": <?php /* @escapeNotVerified */ echo $block->getMagnifier(); ?>,
+                "data": <?php /* @escapeNotVerified */ echo $block->getGalleryImagesJson(); ?>,
+                "options": {
+                    "nav": "<?php /* @escapeNotVerified */ echo $block->getVar("gallery/nav"); ?>",
+                    "loop": <?php /* @escapeNotVerified */ echo $block->getVar("gallery/loop"); ?>,
+                    "keyboard": <?php /* @escapeNotVerified */ echo $block->getVar("gallery/keyboard"); ?>,
+                    "arrows": <?php /* @escapeNotVerified */ echo $block->getVar("gallery/arrows"); ?>,
+                    "allowfullscreen": <?php /* @escapeNotVerified */ echo $block->getVar("gallery/allowfullscreen"); ?>,
+                    "showCaption": <?php /* @escapeNotVerified */ echo $block->getVar("gallery/caption"); ?>,
+                    "width": <?php /* @escapeNotVerified */ echo $block->getImageAttribute('product_page_image_medium', 'width'); ?>,
+                    "thumbwidth": <?php /* @escapeNotVerified */ echo $block->getImageAttribute('product_page_image_small', 'width'); ?>,
+                    "thumbheight": <?php /* @escapeNotVerified */ echo $block->getImageAttribute('product_page_image_small', 'height')
+                        ?: $block->getImageAttribute('product_page_image_small', 'width'); ?>,
+                    "transitionduration": <?php /* @escapeNotVerified */  echo $block->getVar("gallery/transition/duration"); ?>,
+                    "transition": "<?php /* @escapeNotVerified */  echo $block->getVar("gallery/transition/effect"); ?>",
+                    "navarrows": <?php /* @escapeNotVerified */  echo $block->getVar("gallery/navarrows"); ?>,
+                    "navtype": "<?php /* @escapeNotVerified */  echo $block->getVar("gallery/navtype"); ?>",
+                    "navdir": "<?php /* @escapeNotVerified */  echo $block->getVar("gallery/navdir"); ?>"
+                },
+               
+                "breakpoints": <?php /* @escapeNotVerified */ echo $block->getBreakpoints(); ?>
+            }
+        }
+    }
+	
+	
+
+</script>

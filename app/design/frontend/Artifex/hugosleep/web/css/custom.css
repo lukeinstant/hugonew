@@ -1,0 +1,975 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{margin:0px; padding:0px; background:#fff; font-family: 'walsheim_regular'; font-size:14px; line-height:18px; color:#4d4d4d;}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+img, fieldset, iframe{border:none; margin:0px; padding:0px; max-width:100%; height:auto;}
+textarea{outline:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+table{border-collapse:collapse;border-spacing:0}
+a{text-decoration:none; outline:none;}
+h1,h2,h3,h4,h5,h6{ font-family: 'walsheim_regular';}
+h1,h2,h3,h4,h5,h6,ul,p,form,input{margin:0px; padding:0px; outline:none}
+.clear:before,.clear:after{content:" "; display:table;}
+.clear:after{clear:both;}
+.clear{*zoom:1;}
+input[type="submit"]{-webkit-appearance:none; -webkit-border-radius:3px;}
+a, .submit{-webkit-transition: all 200ms ease-in; -moz-transition: all 200ms ease-in; -ms-transition: all 200ms ease-in; -o-transition: all 200ms ease-in;transition: all 200ms ease-in;}
+a.join_now_btn{-webkit-transition:none; -moz-transition:none; -ms-transition:none; -o-transition:none; transition:none;}
+/*Add Placeholder opcity 1*/
+::-moz-placeholder{opacity:1}
+::-webkit-placeholder{opacity:1}
+*{box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+p{ margin-bottom:15px;}
+a{ outline:none !important;}
+
+
+
+@font-face {
+    font-family: 'walsheim_light_italic';
+    src: url('../fonts/gt-walsheim-light-oblique-webfont.eot');
+    src: url('../fonts/gt-walsheim-light-oblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gt-walsheim-light-oblique-webfont.woff2') format('woff2'),
+         url('../fonts/gt-walsheim-light-oblique-webfont.woff') format('woff'),
+         url('../fonts/gt-walsheim-light-oblique-webfont.svg#gt_walsheim_prolight_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'walsheim_medium';
+    src: url('../fonts/gt-walsheim-medium-webfont.eot');
+    src: url('../fonts/gt-walsheim-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gt-walsheim-medium-webfont.woff2') format('woff2'),
+         url('../fonts/gt-walsheim-medium-webfont.woff') format('woff'),
+         url('../fonts/gt-walsheim-medium-webfont.svg#gt_walsheim_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'walsheim_medium_italic';
+    src: url('../fonts/gt-walsheim-medium-oblique-webfont.eot');
+    src: url('../fonts/gt-walsheim-medium-oblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gt-walsheim-medium-oblique-webfont.woff2') format('woff2'),
+         url('../fonts/gt-walsheim-medium-oblique-webfont.woff') format('woff'),
+         url('../fonts/gt-walsheim-medium-oblique-webfont.svg#gt_walsheim_promedium_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'walsheim_regular';
+    src: url('../fonts/gt-walsheim-regular-webfont.eot');
+    src: url('../fonts/gt-walsheim-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gt-walsheim-regular-webfont.woff2') format('woff2'),
+         url('../fonts/gt-walsheim-regular-webfont.woff') format('woff'),
+         url('../fonts/gt-walsheim-regular-webfont.svg#gt_walsheim_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+/*=========================Header=========================*/
+
+.header-container{ position:relative;}
+
+
+.header-container .header-top{ position:absolute; left:0; top:0; width:100%; z-index:999; padding-top:20px;}
+
+.header-top .header-right{ padding-top:0;}
+.header-top .menu-main-sec{ float:right; margin-right:22px;}
+.header-top .menu-main-sec ul li{ float:left; margin-bottom:0;}
+.header-top .menu-main-sec ul li a{ padding:7px 22px; display:block; color:#fff; font-size:16px; line-height:22px; font-family: 'walsheim_medium'; text-decoration:none; border-radius:7px; -moz-border-radius:7px; -webkit-border-radius:7px; -o-border-radius:7px;}
+.header-top .menu-main-sec ul li a:hover,
+.header-top .menu-main-sec ul li a.active{color:#56c7d8;}
+
+.menu-main-sec .mobile-menu{ display:none;}
+
+.header-top .logo{ margin-top:-4px;}
+.header-top .top-cart{ float:right; padding-left:40px; border-left:2px solid #fff; margin-top:5px;}
+.header-top .top-cart .minicart-wrapper{ margin-left:0;}
+.header-top .top-cart a.showcart{ color:#fff; font-size:16px; line-height:22px; font-family: 'walsheim_medium'; text-decoration:none; background:url(../images/to-cart.png) left center no-repeat; padding-left:30px;}
+
+.header-top .top-cart  .minicart-wrapper .action.showcart .counter.qty{ display:block; background: transparent; margin:0; line-height:inherit; min-width:24px;}
+.sticky .top-cart  .minicart-wrapper .action.showcart .counter.qty{ color:#4d4d4d;}
+
+.header-top .top-cart .minicart-wrapper .action.showcart::before{ content:none;}
+
+
+/*===============Top Mini Cart===============*/
+
+.modals-wrapper{ position:relative; z-index:9999;}
+.modals-wrapper .modal-header{ border:none;}
+.modals-wrapper .modal-header button.action-close{ z-index:99;}
+.modals-wrapper .modal-header button.action-close:before{ font-size:24px;}
+
+.modals-wrapper .modal-footer{ border:none; text-align:left;}
+.modals-wrapper .modal-footer button{ border:1px solid #56c7d8; background:#fff; color:#56c7d8;}
+.modals-wrapper .modal-footer button:hover{ background:#56c7d8; color:#fff; transition:all .3s; -moz-transition:all .3s; -o-transition:all .3s; -webkit-transition:all .3s;}
+
+.modals-wrapper .modal-content{ box-shadow:none; -moz-box-shadow:none; -o-box-shadow:none; -webkit-box-shadow:none; border:none; background:none; font-size:16px;}
+
+
+.top-cart .minicart-wrapper .block-minicart{ width:320px; padding:20px 20px 5px; border:1px solid #B3B3B3; border-radius:12px; -moz-border-radius:12px; -webkit-border-radius:12px; -o-border-radius:12px;}
+.top-cart .block-minicart .subtitle.empty{ padding-top:0; font-size:14px; font-weight:normal; text-align:left;}
+
+.top-cart .block-minicart h2.shoping-title{ font-size:18px; line-height:22px; color:#4D4D4D; border-bottom:1px solid #E1E1E1; padding-bottom:10px; margin-bottom:15px; font-family: 'walsheim_medium';}
+
+.top-cart .minicart-wrapper .action.close::before{ content:none;}
+.top-cart .minicart-wrapper .action.close{ width:auto; height:auto; right:20px; top:20px; opacity:1;}
+.top-cart .minicart-wrapper .action.close > span{ position:static; margin:0; font-size:14px; font-family: 'walsheim_medium'; text-decoration:underline; color:#B3B3B3;} 
+
+.top-cart .block-minicart .block-content > .actions > .primary{ margin-left:0; margin-right:0;}
+.top-cart .block-minicart .block-content > .actions > .primary .action.primary{ background:#fff; font-size:16px; border:2px solid #56c7d8; color:#56c7d8; padding:10px 14px; border-radius:12px; -moz-border-radius:12px; -o-border-radius:12px; -webkit-border-radius:12px;}
+.top-cart .block-minicart .block-content > .actions > .primary .action.primary:hover{ background:#56c7d8; color:#fff; transition:all .3s; -moz-transition:all .3s; -webkit-transition:all .3s; -o-transition:all .3s;}
+
+.top-cart .block-minicart .items-total{ display:none;}
+
+.top-cart .minicart-items-wrapper{ margin-bottom:15px;}
+
+.top-cart .block-minicart .subtotal{ clear:both; overflow:hidden; margin:0;}
+.top-cart .block-minicart .subtotal .label{ float:left; display:block; color:#808080; padding:0; font-size:16px; font-weight:normal;}
+.top-cart .block-minicart .subtotal .price-container{ float:right; font-size:16px; color:#4D4D4D;}
+.top-cart .block-minicart .amount .price-wrapper:first-child .price{font-size:16px; color:#4D4D4D; font-family: 'walsheim_medium'; font-weight:normal;}
+
+.top-cart .minicart-items .product-item-details{ padding-left:0; width:120px; float:right; text-align:right; padding-top:30px; position:relative;}
+.top-cart .minicart-items .product-item-name{ display:none;}
+.top-cart .minicart-items .product.options .toggle{ display:none;}
+.top-cart .minicart-items .product.options .content{ display:block !important;}
+.top-cart .minicart-items .product.options dl{ margin-bottom:0;}
+.top-cart .minicart-items .product.options dt.label{ display:none;}
+.top-cart .minicart-items .product.options dd.values{ font-size:14px; color:#4D4D4D; font-family: 'walsheim_medium'; margin-bottom:5px;}
+.top-cart .minicart-items .product-item-details .price{font-size:14px; color:#4D4D4D; font-family: 'walsheim_medium';}
+
+.minicart-items .product-item-pricing .label{ display:none;}
+.minicart-items .product-item-pricing .details-qty input.item-qty{ height:20px; line-height:20px; border:1px solid #B3B3B3; width:40px; background:#fff; margin-right:0;}
+
+.top-cart .minicart-wrapper .product .actions{ margin:0; position:absolute; right:0; top:0;}
+.top-cart .minicart-wrapper .product .actions .primary{ display:none;}
+.top-cart .minicart-items .action.delete::before{content: '\e616'; font-size:14px; line-height:20px; color:#B2B2B2;}
+
+
+
+
+
+
+.banner-detail-sec{background:url(../images/header-banner.jpg) center top no-repeat; text-align:center; padding-top:240px; background-size:cover;}
+
+.banner-detail-sec .banner-text-sec{ position:absolute; left:0; top:50%; width:100%;}
+.banner-detail-sec .banner-text-sec h2{ font-size:52px; line-height:52px; color:#fff; font-family: 'walsheim_medium'; margin-bottom:15px;}
+.banner-detail-sec .banner-text-sec p{ font-size:26px; line-height:30px; color:#fff; font-family: 'walsheim_regular';}
+.banner-detail-sec .banner-text-sec p a{ color:#fff; text-decoration:none;}
+
+
+/*=========================All Banner=========================*/
+
+.cms-home .banner-detail-sec .banner-text-sec{ margin-top:-90px;}
+.cms-mattress .banner-detail-sec .banner-text-sec{ margin-top:-30px;}
+.cms-about .banner-detail-sec .banner-text-sec{ margin-top:-85px;}
+.cms-support .banner-detail-sec .banner-text-sec{ margin-top:-70px;}
+.catalog-product-view .banner-detail-sec .banner-text-sec{ margin-top:-55px;}
+
+
+
+
+
+a.see-btn{ padding:12px 20px; border:2px solid #56C7D8; color:#fff; font-family: 'walsheim_medium'; font-size:18px; text-decoration:none; margin-top:20px; display:inline-block; border-radius:10px; -moz-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px;}
+a.see-btn:hover{ background:#56C7D8;}
+
+.header-container .scroll-arrow{ width:100%; position:absolute; bottom:22px; left:0; text-align:center;}
+/* savan sticky header */
+.stikey-logo{display:none;}
+.header-top.sticky{position: fixed !important; background-color:#fff; box-shadow:0 0 10px rgba(0,0,0,0.2); -moz-box-shadow:0 0 10px rgba(0,0,0,0.2); -o-box-shadow:0 0 10px rgba(0,0,0,0.2); -webkit-box-shadow:0 0 10px rgba(0,0,0,0.2); transition:all .6s; -moz-transition:all .6s; -o-transition:all .6s; -webkit-transition:all .6s;}
+.header-top.sticky .menu-main-sec ul li a, .header-top.sticky .menu-main-sec ul li a{color:#4D4D4D}
+.header-top.sticky .menu-main-sec ul li a:hover,
+.header-top.sticky .menu-main-sec ul li a.active{color:#56c7d8;}
+.header-top.sticky .top-cart{border-left:2px solid #4D4D4D}
+.header-top.sticky .top-cart a.showcart{background:url(../images/to-cart-blk.png) left center no-repeat}
+.header-top.sticky .logo{display:none;}
+.header-top.sticky .stikey-logo{display:block!important;}
+
+/*=========================Main Container=========================*/
+
+#maincontent{ max-width:none; padding:0;}
+
+.columns .column.main{ padding-bottom:0;}
+
+.nav-sections{ display:none;}
+
+
+.flvour-sec{ background:url(../images/flvour-bg.jpg) center top no-repeat; background-size:cover; padding:250px 0;}
+
+.flvour-sec .flvour-text{ text-align:center;}
+.flvour-sec h2{ font-size:52px; line-height:52px; color:#4D4D4D; font-family: 'walsheim_medium'; margin-bottom:10px;}
+.flvour-sec p{ font-size:26px; line-height:32px; color:#4D4D4D;}
+
+.deliver-sec{ background:url(../images/deliver-bg.jpg) center top no-repeat; background-size:cover; background-attachment:fixed; text-align:center; padding:280px 0; }
+.deliver-sec h2{font-size:52px; line-height:52px; color:#fff; font-family: 'walsheim_medium'; margin-bottom:20px;}
+.deliver-sec p{ font-size:26px; line-height:32px; color:#fff;}
+
+
+.rest-assured-sec{ background:url(../images/restAssured-sec.jpg) center top no-repeat; background-size:cover; background-attachment:fixed; padding:180px 0; text-align:center;}
+
+.rest-assured-sec .assured-details{}
+.rest-assured-sec .assured-details .icons{ margin-bottom:30px;}
+.rest-assured-sec .assured-details h2{font-size:52px; line-height:52px; color:#fff; font-family: 'walsheim_medium'; margin-bottom:20px;}
+.rest-assured-sec .assured-details p{font-size:26px; line-height:32px; color:#fff;}
+.rest-assured-sec .assured-details p.italic{   font-family: 'walsheim_light_italic';}
+
+
+.countsheet-sec{ background:url(../images/countsheet-bg.jpg) center top no-repeat; background-attachment:fixed; background-size:cover; padding:210px 0; text-align:center;}
+.countsheet-sec h2{font-size:52px; line-height:52px; color:#fff; font-family: 'walsheim_medium'; margin-bottom:20px;}
+.countsheet-sec p{font-size:26px; line-height:32px; color:#fff;}
+
+
+/*=========================Footer=========================*/
+
+.footer-container{ background:#333333; padding:52px 0; text-align:center; }
+.footer-container .footer-links{ margin-bottom:40px;}
+.footer-container .footer-links ul li{ display:inline-block;}
+.footer-container .footer-links ul li a{ font-size:16px; line-height:20px; color:#D9D9D9; font-family: 'walsheim_medium'; padding:0 25px; display:block; text-decoration:none;}
+
+.footer-container .newslatter-block{ margin-bottom:40px;}
+.footer-container .newslatter-block input[type=email]{ height:40px; line-height:40px; background-color:#D9D9D9; background-image:url(../images/newslatter-icon.png); background-position:45px center; background-repeat:no-repeat; padding:0 10px 0 80px; width:300px; border:none; font-family: 'walsheim_regular'; font-size:16px; vertical-align:middle; border-radius:10px; -moz-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px;}
+
+
+.footer-container .newslatter-block  .control,
+.footer-container .newslatter-block  .actions{ display:inline-block;}
+
+
+
+.footer-container .newslatter-block button.subscribe{ background:none; border:2px solid #56C7D8; height:40px; line-height:34px; padding:0 40px; color:#fff; font-size:16px; vertical-align:middle; font-family: 'walsheim_medium'; margin-left:15px; border-radius:10px; -moz-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px;}
+.footer-container .newslatter-block button.subscribe:hover{background:#56C7D8; transition:all .3s; -moz-transition:all .3s; -o-transition:all .3s; -webkit-transition:all .3s;}
+
+
+.footer-container .footer-contact{}
+.footer-container .footer-contact h4{ font-size:16px; line-height:24px; text-decoration:underline; font-family: 'walsheim_medium'; color:#D9D9D9; margin-bottom:40px;}
+.footer-container .footer-contact h4 a{color:#D9D9D9;}
+
+.footer-container .social{ margin-bottom:40px;}
+.footer-container .social li{ display:inline-block; vertical-align:middle; margin:0 5px;}
+
+.footer-container .contact-info{color:#D9D9D9; font-family: 'walsheim_medium'; margin-bottom:40px; }
+.footer-container .contact-info a{ font-size:16px; text-decoration:none; line-height:22px; color:#D9D9D9; font-family: 'walsheim_medium'; margin-bottom:10px; display:inline-block;}
+.footer-container .contact-info h4{ font-size:16px; line-height:22px; color:#D9D9D9; font-family: 'walsheim_medium'; }
+
+.footer-container .copy-right{ color:#808080; font-size:12px;}
+.footer-container .copy-right p{color:#808080;}
+.footer-container .copy-right a{ color:#B3B3B3; text-decoration:underline;}
+
+
+
+/*=========================About US=========================*/
+
+.cms-about .banner-detail-sec{ background-image:url(../images/about-banner.jpg);}
+
+.hugo-like-sec{ padding:110px 0 50px; text-align:center;}
+
+.hugo-like-sec h2{ font-size:36px; line-height:36px; color:#54C0D1; font-family: 'walsheim_medium'; padding-bottom:60px; background:url(../images/title-border.png) center bottom no-repeat;}
+
+.hugo-like-sec .like-row{width:75%; margin-top:100px; display:table; margin:100px auto 0;}
+.hugo-like-sec .like-row .like-image{width:50%; display:table-cell; vertical-align:middle; padding:0 12px;}
+.hugo-like-sec .like-row .like-text{width:50%; display:table-cell; vertical-align:middle; padding:0 12px;}
+
+.hugo-like-sec .like-text h3{ font-size:30px; line-height:30px; color:#4D4D4D; font-family: 'walsheim_medium'; margin-bottom:12px;}
+.hugo-like-sec .like-text p{ font-size:20px; line-height:24px; color:#4D4D4D;}
+
+.hugo-like-sec .like-row .mobile-show{ display:none;}
+
+
+.enter-hugo-sec{ text-align:center; padding:70px 0 130px;}
+.enter-hugo-sec .enter-block{ width:45%; margin:0 auto;}
+.enter-hugo-sec h2{font-size:36px; line-height:36px; margin-bottom:20px; color:#54C0D1; font-family: 'walsheim_medium'; padding-top:60px; background:url(../images/title-border.png) center top  no-repeat;}
+.enter-hugo-sec p{font-size:20px; line-height:24px; color:#4D4D4D;}
+.enter-hugo-sec p.italic{ font-family: 'walsheim_light_italic';}
+
+.enter-hugo-sec .enter-image{ margin-top:50px;}
+
+
+
+
+.sleep-easy-sec{ background:url(../images/sleep-easy.jpg) center top no-repeat; background-attachment:fixed; background-size:cover; padding:220px 0; text-align:center;}
+
+.sleep-easy-sec h3{ font-size:26px; line-height:30px; color:#fff;}
+.sleep-easy-sec h2{ font-size:52px; line-height:52px; color:#fff; font-family: 'walsheim_medium'; margin-bottom:10px;}
+
+
+/*=========================Mattress=========================*/
+
+
+.cms-mattress .banner-detail-sec{ background-image:url(../images/mattress-banner.jpg);}
+
+.prices-fair-sec{ background:#54C0D1; padding:200px 0; text-align:center;}
+.prices-fair-sec .mobile-show{ display:none;}
+.prices-fair-sec h2{ font-size:36px; line-height:36px; color:#fff; font-family: 'walsheim_medium'; margin-bottom:40px;}
+
+
+.just-medium-sec{ background:url(../images/just-medium.jpg) center top no-repeat; background-attachment:fixed; background-size:cover; padding:270px 0; text-align:center;}
+
+.just-medium-sec h2{font-size:52px; line-height:52px; color:#fff; font-family: 'walsheim_medium'; margin-bottom:20px;}
+.just-medium-sec p{ font-size:24px; line-height:28px; color:#fff;}
+
+
+.bounce-cool-sec{ padding:150px 0; text-align:center;}
+
+.bounce-cool-sec .bc-block{ padding:0 15px;}
+.bounce-cool-sec .bc-block .image{ margin-bottom:75px;}
+.bounce-cool-sec .bc-block h2{ font-size:36px; line-height:36px; margin-bottom:10px; color:#4D4D4D; font-family: 'walsheim_medium';  }
+.bounce-cool-sec .bc-block p{ font-size:21px; line-height:25px; color:#4D4D4D;}
+
+
+.guts-hugo-sec{ background:#54C0D1; padding:110px 0;}
+.guts-hugo-sec .guto-block{ display:table; width:85%; margin:0 auto;}
+.guts-hugo-sec .guto-block .guto-image{ display:table-cell; vertical-align:middle;}
+.guts-hugo-sec .guto-block .guto-text{ display:table-cell; vertical-align:middle; text-align:center;}
+.guts-hugo-sec .guto-block h2{font-size:36px; line-height:36px; color:#fff; font-family: 'walsheim_medium'; margin-bottom:50px;}
+.guts-hugo-sec .guto-block p{ font-size:21px; line-height:25px; color:#fff;}
+
+
+.mat-slide-sec{ padding:90px 0; text-align:center;}
+
+.mat-slide-sec .slider-block{ width:45%; margin:0 auto;}
+.mat-slide-sec .slider-block .image{ margin-bottom:65px;}
+.mat-slide-sec .slider-block h2{font-size:36px; line-height:36px; color:#54C0D1; margin-bottom:15px; font-family: 'walsheim_medium'; }
+.mat-slide-sec .slider-block p{ font-size:21px; line-height:25px; color:#4D4D4D;}
+
+
+.mat-slide-sec .bx-controls{ margin-top:40px;}
+.mat-slide-sec .bx-controls .bx-pager-item{ display:inline-block; margin:0 5px;}
+.mat-slide-sec .bx-controls .bx-pager-item a{ background:#E6E6E6; width:10px; height:10px; border-radius:100%; -moz-border-radius:100%; -o-border-radius:100%; -webkit-border-radius:100%; text-indent:-99999px; display:block; outline:none;}
+.mat-slide-sec .bx-controls .bx-pager-item a:hover,
+.mat-slide-sec .bx-controls .bx-pager-item a.active{ background:#B3B3B3;}
+
+
+
+.mat-details-sec{ background:#54C0D1; padding:60px 0 0;}
+.mat-details-sec .accordion-title{ text-align:center; margin-bottom:-20px;}
+.mat-details-sec .accordion-title a{ color:#fff; text-decoration:none; outline:none; font-size:24px; line-height:28px; font-family: 'walsheim_medium_italic'; background-image:url(../images/arrow-down.png); background-position:center bottom; background-repeat:no-repeat; padding-bottom:80px; display:inline-block;}
+
+.mat-details-sec .accordion-title.close-tab a{background-image:url(../images/arrow-up.png);}
+
+.mat-details-sec .accordion-title .hide{ display:none;}
+
+.mat-details-sec .accordion-title.close-tab .hide{ display:block !important;}
+.mat-details-sec .accordion-title.close-tab .show{ display:none !important;}
+
+.mat-details-sec table{ width:70%; border:1px solid #fff; margin-bottom:60px;}
+.mat-details-sec table td{ padding:20px 12px; border-bottom:1px solid #fff; margin-bottom:0;}
+.mat-details-sec table td.title{ font-size:18px; line-height:22px; color:#fff; font-family: 'walsheim_medium'; width:25%;}
+.mat-details-sec table td.details{ font-size:18px; color:#fff; line-height:22px;}
+.mat-details-sec table td.details p{ margin-bottom:0;}
+.mat-details-sec table td.details .masurments li{ float:left; width:25%; list-style:none;}
+.mat-details-sec table td.details .masurments h4{ font-size:18px; line-height:22px; margin-bottom:10px; text-decoration:underline; font-family: 'walsheim_medium'; color:#fff;}
+.mat-details-sec table td.details li{ list-style:inside; margin-bottom:2px;}
+
+
+.free-delivery-sec{ text-align:center; background:url(../images/hugo_deliveryandfactory.jpg) center top no-repeat; background-attachment:fixed;  background-size:cover; padding:200px 0;}
+
+.free-delivery-sec h2{font-size:52px; line-height:52px; color:#fff; font-family: 'walsheim_medium'; margin-bottom:20px;}
+.free-delivery-sec p{ font-size:24px; line-height:28px; color:#fff;}
+.free-delivery-sec .see-btn{ margin-top:75px;}
+
+
+/*===============Support===============*/
+
+.cms-support .banner-detail-sec{ background-image:url(../images/support-banner.jpg);}
+
+
+
+.support-content{}
+.support-content > h2{ background:#54C0D1; padding:40px 0; font-size:36px; line-height:42px; text-align:center; color:#fff; font-family: 'walsheim_medium';}
+
+.support-content #contact-form{ padding:100px 0; width:70%; margin:0 auto;}
+.support-content #contact-form h3{ font-size:28px; line-height:32px; color:#4D4D4D; padding-bottom:15px; border-bottom:1px solid #B3B3B3; margin-bottom:15px; font-family: 'walsheim_medium';}
+.support-content #contact-form > p{ font-size:14px; color:#54C0D1; font-family: 'walsheim_medium';}
+
+.support-content #contact-form .fieldset{ margin-top:30px;}
+.support-content #contact-form label{ font-size:14px; color:#B3B3B3; font-weight:normal; padding:0;}
+.support-content #contact-form .field.required > .label::after{ font-size:14px; color:#54c0d1;}
+
+.support-content #contact-form input.input-text{ height:42px; line-height:42px; border:1px solid #B3B3B3; border-radius:12px; -moz-border-radius:12px; -o-border-radius:12px; -webkit-border-radius:12px;}
+
+.support-content #contact-form textarea{ max-height:130px; min-height:130px; border:1px solid #B3B3B3;  border-radius:12px; -moz-border-radius:12px; -o-border-radius:12px; -webkit-border-radius:12px;}
+
+.support-content #contact-form .actions-toolbar{ margin-left:0;}
+.support-content #contact-form .actions-toolbar button.action{ padding:12px 40px; border:1px solid #56C7D8; background:#fff; color:#56C7D8; font-size:18px; font-family: 'walsheim_medium'; border-radius:12px; -moz-border-radius:12px; -o-border-radius:12px; -webkit-border-radius:12px;}
+.support-content #contact-form .actions-toolbar button.action:hover{ background:#56C7D8; transition:all .3s; -moz-transition:all .3s; -o-transition:all .3s; -webkit-transition:all .3s; color:#fff; }
+
+
+
+.faq-sec{}
+.faq-sec h2{ background:#54C0D1; padding:40px 0; font-size:36px; line-height:42px; text-align:center; color:#fff; font-family: 'walsheim_medium';}
+
+.faq-sec .faq-post-list{ padding:70px 0; width:70%; margin:0 auto;}
+
+.faq-post-list .accordion-section{ padding:25px 0; border-bottom:1px solid #B3B3B3;}
+.faq-post-list .accordion-section .accordion-section-title{ font-size:21px; line-height:25px; color:#4D4D4D; font-family: 'walsheim_medium'; display:block; text-decoration:none; outline:none; background-image:url(../images/tab-plus.png); background-position:right center; background-repeat:no-repeat; padding-right:40px;}
+.faq-post-list .accordion-section .accordion-section-title.active{margin-bottom:15px; background-image:url(../images/tab-minus.png);}
+
+.faq-post-list .accordion-section .accordion-section-content{ font-size:18px; line-height:22px; color:#808080; display:none;}
+
+
+
+
+/*===============Shop===============*/
+
+.catalog-product-view .banner-detail-sec{ background-image:url(../images/shop-banner.jpg);}
+
+
+.shop-top-title{ background:#56C7D8; padding:45px 0; text-align:center;}
+.shop-top-title h2{ font-size:28px; line-height:32px; color:#fff; font-family: 'walsheim_medium';}
+
+.page-layout-1column .product.media{ width:100% !important; float:none; padding-top:100px;}
+.page-layout-1column .product-info-main{ width:100% !important; float:none;}
+
+.product.media .more-views{ margin-top:100px;}
+.product.media .more-views .owl-carousel .owl-item{ opacity:.3;}
+.product.media .more-views .owl-carousel .owl-item.active.center{ opacity:1;}
+
+.product.media h2.gallery-title{ font-size:36px; line-height:42px; color:#56C7D8; font-family: 'walsheim_medium'; text-align:center;}
+
+.product-info-main .product-info-price{ text-align:center;}
+
+.product-info-main .product-add-form{ text-align:center;}
+
+.product-info-main .swatch-attribute-options{}
+.product-info-main .product-add-form .swatch-option.text{ float:none; display:inline-block; height:auto; border:2px solid #B3B3B3; background:#fff; font-size:18px; font-family: 'walsheim_medium'; max-width:none; width:175px; padding:12px; margin:0 20px; border-radius:10px; -moz-border-radius:10px; -o-border-radius:10px; -owebkit-border-radius:10px;}
+.product-info-main .product-add-form .swatch-option:hover,
+.product-info-main .product-add-form .swatch-option.selected{ background:#4D4D4D !important; border-color:#4D4D4D; color:#fff; transition:all .3s; -moz-transition:all .3s; -webkit-transition:all .3s; -o-transition:all .3s;}
+
+.swatch-option:hover:not(.disabled){ outline:none !important;}
+.swatch-option.selected{ outline:none !important;}
+
+.product-add-form .product-options-bottom .qty{ display:none !important;}
+.product-add-form .product-options-bottom button.tocart{ background-color:#fff; border:2px solid #56C7D8; font-size:18px !important; color:#56C7D8; padding:10px 30px 10px !important; border-radius:10px; -moz-border-radius:10px; -o-border-radius:10px; -owebkit-border-radius:10px;}
+
+.product-add-form .product-options-bottom button.tocart span{background-image:url(../images/add-to-cart.png); background-position:left -63px; background-repeat:no-repeat; padding-left:28px;}
+
+.product-add-form .product-options-bottom button.tocart:hover{ background-color:#56C7D8;  color:#fff; transition:all .3s; -moz-transition:all .3s; -webkit-transition:all .3s; -o-transition:all .3s;}
+.product-add-form .product-options-bottom button.tocart:hover span{background-position:left -13px; transition:all .3s; -moz-transition:all .3s; -webkit-transition:all .3s; -o-transition:all .3s;}
+
+
+.product-info-main .product-options-bottom .price-box .price{ font-size:36px; line-height:40px; color:#4D4D4D; font-family: 'walsheim_medium'; }
+
+.product-info-main .box-tocart, .product-options-bottom .box-tocart{ display:block !important; margin-top:75px;}
+
+.product-info-main .box-tocart .actions, .product-options-bottom .box-tocart .actions{ display:block !important; padding-top:0 !important;}
+.product-options-wrapper .swatch-attribute .swatch-attribute-label{ display:none;}
+
+.catalog-product-view .swatch-option-tooltip{ display:none !important;}
+
+
+/*===========Zole===========*/
+
+.product-info-main .product-options-wrapper{ position:relative; clear:both; overflow:hidden;}
+.product-options-wrapper .swatch-attribute.test{ position:relative; min-height:180px;}
+
+.product-options-wrapper .swatch-attribute .swatch-attribute-selected-option{ position:absolute; top:130px; left:0; width:100%; padding-left:0; font-size:36px; line-height:40px; color:#4D4D4D; font-family: 'walsheim_medium'; }
+
+.product-options-wrapper .swatch-attribute.sub_size{ margin-top:10px;}
+.product-options-wrapper .swatch-attribute.sub_size .swatch-attribute-options{ display:none;}
+.product-options-wrapper .swatch-attribute.sub_size .swatch-attribute-selected-option{ position:static;}
+.product-options-wrapper .swatch-attribute.sub_size .swatch-attribute-selected-option{ color:#B3B3B3; font-size:18px; line-height:22px;}
+
+.product-info-main .price-box{ margin-top:0;}
+
+
+
+
+
+
+.shop-slide-sec{ padding:100px 0;}
+.shop-slide-sec .slider-block{ width:95%; margin:0 auto;}
+.shop-slide-sec .bx-controls{ margin-top:40px; text-align:center;}
+.shop-slide-sec .bx-controls .bx-pager-item{ display:inline-block; margin:0 5px;}
+.shop-slide-sec .bx-controls .bx-pager-item a{ background:#E6E6E6; width:10px; height:10px; border-radius:100%; -moz-border-radius:100%; -o-border-radius:100%; -webkit-border-radius:100%; text-indent:-99999px; display:block; outline:none;}
+.shop-slide-sec .bx-controls .bx-pager-item a:hover,
+.shop-slide-sec .bx-controls .bx-pager-item a.active{ background:#B3B3B3;}
+
+
+
+.hugo-special-sec{ background:url(../images/hugo-special.jpg) center top no-repeat; background-attachment:fixed; background-size:cover; padding:210px 0; text-align:center;}
+
+.hugo-special-sec h2{ font-size:52px; line-height:52px; color:#fff; font-family: 'walsheim_medium'; margin-bottom:15px;}
+.hugo-special-sec p{ font-size:26px; line-height:30px; color:#fff;}
+.hugo-special-sec a.see-btn{ margin-top:30px;}
+
+
+
+
+/*===============Checkout===============*/
+
+
+._keyfocus *:focus, input:focus:not([disabled]), textarea:focus:not([disabled]), select:focus:not([disabled]){ box-shadow:none; border:1px solid #54c0d1 !important;}
+
+
+
+
+.checkout-index-index .header-container .header-top{ position:static;}
+.checkout-index-index .header-top .logo{ display:none;} 
+.checkout-index-index .header-top .stikey-logo{ display:block !important;}
+.checkout-index-index .header-top{ box-shadow:0 0 10px rgba(0,0,0,0.2); -moz-box-shadow:0 0 10px rgba(0,0,0,0.2); -o-box-shadow:0 0 10px rgba(0,0,0,0.2); -webkit-box-shadow:0 0 10px rgba(0,0,0,0.2);}
+
+
+.checkout-container{ padding:60px 0;}
+
+.checkout-container .opc-progress-bar{ text-align:center;}
+
+
+.opc-progress-bar{ margin-bottom:60px;}
+.opc-progress-bar-item::before{ background:#B3B3B3;}
+.opc-progress-bar-item > span::before{background:#B3B3B3;}
+
+.opc-progress-bar-item._active::before{background:#54C0D1;}
+.opc-progress-bar-item._active > span::before{ background:#54C0D1;}
+.opc-progress-bar-item._active > span::after{ color:#54C0D1;}
+
+.opc-progress-bar-item._active > span::after{ font-size:2rem; line-height:2.5rem; color:#4D4D4D;}
+.opc-progress-bar-item > span::after{ font-size:2rem !important; line-height:2.5rem !important;}
+
+.opc-progress-bar-item._active > span{ color:#54C0D1;}
+.opc-progress-bar-item > span{ font-size:18px; font-family:'walsheim_medium'; color:#B3B3B3;}
+
+
+.checkout-container .opc-wrapper{ width:66.6666%; padding-right:80px;}
+
+#checkoutSteps .step-title{ font-size:28px; line-height:32px; color:#4D4D4D; font-family:'walsheim_medium'; padding-bottom:18px; border-bottom:1px solid #B3B3B3;}
+
+#checkoutSteps .label{ color:#B3B3B3; font-size:14px; padding-left:0; font-family:"walsheim_medium";}
+.opc-wrapper .fieldset > .field.required > label::after{ margin-left:5px !important; top:2px !important; color:#54c0d1;}
+
+#checkoutSteps .field .input-text{ height:40px; line-height:40px; border:1px solid #b3b3b3; border-radius:12px; -moz-border-radius:12px; -o-border-radius:12px; -webkit-border-radius:12px;}
+#checkoutSteps .field  select{ height:40px; border:1px solid #b3b3b3; border-radius:12px; -moz-border-radius:12px; -o-border-radius:12px; -webkit-border-radius:12px; background:url(../images/select-arrow.png) right center no-repeat; -moz-appearance:none; -webkit-appearance:none; appearance:none;}
+
+#checkoutSteps .field textarea{ min-height:130px; max-height:130px; border:1px solid #b3b3b3; border-radius:12px; -moz-border-radius:12px; -o-border-radius:12px; -webkit-border-radius:12px;}
+
+
+#checkoutSteps .field{ margin-bottom:20px;}
+#checkoutSteps .field.street legend.label{ display:block; width:100%; text-align:left; border:none; border:none; padding-bottom:4px;}
+#checkoutSteps .field.street .label{ padding:0;}
+.fieldset > .field.required > .label::after, .fieldset > .fields > .field.required > .label::after{ color:#54c0d1;}
+#checkoutSteps fieldset.field .field{ margin-bottom:0;}
+
+
+#checkoutSteps .form-login{ border-bottom:none !important; padding-bottom:0 !important; margin-bottom:0 !important;}
+#checkoutSteps .form-login span.note{ display:none !important;}
+#checkoutSteps .form-login .field{ margin-bottom:0 !important;}
+
+#checkoutSteps #co-shipping-form{ margin-top:20px !important;}
+
+.field-tooltip .field-tooltip-action::before{ font-size:18px;}
+
+
+.checkout-payment-method .payment-method-content{ padding-left:0;}
+.checkout-payment-method .field-select-billing, .checkout-payment-method .billing-address-form{ max-width:inherit;}
+
+
+#checkoutSteps .payment-method-billing-address label{ font-weight:normal; font-size:14px; color:#B3B3B3; font-family:"walsheim_medium"; vertical-align:middle;}
+
+
+.opc-wrapper .form-login, .opc-wrapper .form-shipping-address{ max-width:inherit !important;}
+
+
+.checkout-payment-method .payment-method-content .fieldset > .field.type .control{ margin-left:0 !important;}
+.checkout-payment-method .ccard .number .input-text{ width:100%;}
+
+
+.opc-estimated-wrapper .minicart-wrapper button.showcart:before{ content:none;}
+.opc-estimated-wrapper .minicart-wrapper button.showcart{ background:url(../images/estimated-cart.png) 20px center no-repeat; padding:7px 15px 7px 100px; border-color:#B3B3B3; background-color:#f7f7f7; border-radius:0; -moz-border-radius:0; -o-border-radius:0; -webkit-border-radius:0;}
+.opc-estimated-wrapper .minicart-wrapper button.showcart span.counter.qty{ height:60px; width:60px; line-height:60px; border-radius:100%; -moz-border-radius:100%; -o-border-radius:100%; -webkit-border-radius:100%; background:#54C0D1; font-size:30px; color:#fff;}
+.opc-estimated-wrapper .estimated-block .estimated-label{ font-size:30px; line-height:32px; color:#4D4D4D;}
+.opc-estimated-wrapper .estimated-block .estimated-price{ font-size:24px; line-height:28px; color:#4D4D4D;}
+
+
+
+
+.header-checkout-top{ padding:20px 0; border-bottom:4px solid #dbdbdb; text-align:center;}
+.header-checkout-top .logo{ margin:0;}
+.header-checkout-top h2.checkout-title{ background:url(../images/cart-blue.png) right center no-repeat; display:inline-block; padding-right:50px; color:#54C0D1; font-size:32px; line-height:36px; margin:0; font-family:"walsheim_medium"; margin-left:-50px;}
+
+
+.checkout-footer{ background:#F7F7F7; padding:30px 0; text-align:center;}
+.checkout-footer h4{ font-size:14px; line-height:20px; color:#B3B3B3; font-family:"walsheim_medium";}
+.checkout-footer .payment-logo{ padding:15px 0;}
+.checkout-footer p{ font-size:13px; line-height:20px; color:#B3B3B3; font-family:"walsheim_medium"; margin-bottom:0;}
+
+
+
+.checkout-payment-method .payment-option-title{ padding-left:0;}
+.checkout-payment-method .payment-option-content{ padding-left:0;}
+
+
+.checkout-payment-method .payment-method-billing-address{ margin-bottom:60px;}
+
+.checkout-container .actions-toolbar{ margin-left:0 !important;}
+.checkout-container .actions-toolbar .primary{ float:left !important;}
+.checkout-container .actions-toolbar button{ min-width:175px; border:2px solid #56C7D8; color:#56C7D8; background:#fff; padding-top:12px !important; padding-bottom:12px !important; font-size:18px; font-family:"walsheim_medium"; border-radius:10px; -moz-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px;}
+
+
+.checkout-container .actions-toolbar button.action-cancel{min-width:175px; border:2px solid #56C7D8; color:#56C7D8; background:#fff; padding:12px 15px;  font-size:18px; font-family:"walsheim_medium"; margin:0 10px 0 0; line-height:inherit; border-radius:10px; -moz-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px;}
+
+.checkout-container .actions-toolbar button:hover,
+.checkout-container .actions-toolbar button.action-cancel:hover{ background:#56C7D8; text-decoration:none; border:2px solid #56C7D8; color:#fff; transition:all .3s; -moz-transition:all .3s; -webkit-transition:all .3s; -o-transition:all .3s;}
+
+.checkout-container .authentication-wrapper{ display:none;}
+
+
+.checkout-payment-method .payment-method-title input.radio{ display:inline-block;}
+
+
+/*=========================== Zole ===========================*/
+
+#shipping-new-address-form{ margin-left:-15px; margin-right:-15px;}
+#shipping-new-address-form > .field{ padding-left:15px; padding-right:15px;}
+#shipping-new-address-form > .field:nth-child(1){ float:left; width:50%;}
+#shipping-new-address-form > .field:nth-child(2){ float:left; width:50%;}
+
+#shipping-new-address-form > .field:nth-child(3){ display:none;}
+
+#shipping-new-address-form > .field:nth-child(4){ clear:left;}
+
+#shipping-new-address-form > .field:nth-child(5){ width:100%; float:left;}
+
+#shipping-new-address-form > .field:nth-child(6){ width:50%; float:left;}
+
+#shipping-new-address-form > .field:nth-child(7){ float:left; width:50%;}
+#shipping-new-address-form > .field:nth-child(8){ width:50%; float:left;}
+
+#shipping-new-address-form > .field:nth-child(9){ width:50%; float:left; display:none;}
+#shipping-new-address-form > .field:nth-child(10){ width:100%; float:left;}
+
+#checkoutSteps #opc-shipping_method{ clear:left;}
+
+
+
+#billing-new-address-form{ margin-left:-15px; margin-right:-15px;}
+#billing-new-address-form > .field{ padding-left:15px; padding-right:15px;}
+
+#billing-new-address-form > .field:nth-child(1){ float:left; width:50%;}
+#billing-new-address-form > .field:nth-child(2){ float:left; width:50%;}
+
+#billing-new-address-form > .field:nth-child(3){ display:none;}
+#billing-new-address-form > .field:nth-child(4){ clear:left;}
+
+#billing-new-address-form > .field:nth-child(5){ width:100%; float:left;}
+
+#billing-new-address-form > .field:nth-child(6){ width:50%; float:left;}
+
+#billing-new-address-form > .field:nth-child(7){ width:50%; float:left;}
+#billing-new-address-form > .field:nth-child(8){ float:left; width:50%;}
+
+#billing-new-address-form > .field:nth-child(9){ width:50%; float:left; display:none;}
+#billing-new-address-form > .field:nth-child(10){ width:100%; float:left;}
+
+
+
+
+#checkoutSteps #opc-shipping_method .step-title{ display:none;}
+#checkoutSteps #opc-shipping_method #checkout-shipping-method-load{ display:none;}
+
+
+/* Checkout RightSide */
+
+.opc-sidebar .modal-content{ background:#F7F7F7; border:none; box-shadow:none; border-radius:0; -moz-border-radius:0; -o-border-radius:0; -wekbit-border-radius:0;}
+
+.opc-sidebar .modal-header{ padding:0; border-bottom:none;}
+.opc-block-summary{ background:#F7F7F7; margin-bottom:0; padding:35px 30px;}
+
+.opc-block-summary > .title{ font-size:21px; line-height:25px; color:#4D4D4D; font-family:'walsheim_medium'; border-bottom:none; padding-bottom:7px;}
+
+.opc-block-summary .items-in-cart > .title strong{ font-size:16px; color:#B3B3B3;}
+
+.opc-block-summary .product-image-container{ width:165px;}
+.opc-block-summary .product-item-details{ width:130px; padding-left:0; float:right;}
+
+.opc-block-summary .product-item-details .product-item-name-block{ display:block;}
+.opc-block-summary .product-item-details .subtotal{ display:block;}
+.opc-block-summary .product-item-details .details-qty{ text-align:right;}
+.opc-block-summary .product-item-details .details-qty .label{ color:#4D4D4D;}
+
+.opc-block-summary .product-item-details .subtotal .price{ font-size:14px;}
+
+.cart-totals .mark, .opc-block-summary .table-totals .mark{ color:#b3b3b3;}
+.opc-block-summary .mark .value{color:#b3b3b3;}
+
+
+.opc-sidebar .table-totals .shipping .mark span.label{ display:none;}
+
+.opc-sidebar .opc-block-shipping-information{ padding-bottom:20px;}
+.opc-sidebar .opc-block-shipping-information .shipping-information-title{font-size:21px; line-height:25px; color:#4D4D4D; font-family:'walsheim_medium'; padding-bottom:7px;}
+.opc-block-shipping-information .shipping-information-title .action-edit{ top:0;}
+
+
+.opc-sidebar .items-in-cart .minicart-items{ display:block !important;}
+.opc-block-summary .items-in-cart > .title::after{ content:none;}
+.opc-block-summary .items-in-cart.active > .title::after{ content:none;}
+
+.opc-sidebar .minicart-items .product-item-name-block .product-item-name{ display:none;}
+
+
+
+
+.opc-sidebar .minicart-items .product.options .toggle{ display:none;}
+.opc-sidebar .minicart-items .product.options .content{ display:block !important;}
+.opc-sidebar .product.options .content .item-options{ margin-bottom:0;}
+.opc-sidebar .product.options .content .item-options dt.label{ display:none;}
+.opc-sidebar .product.options .content .item-options .values{ text-align:right; color:#4D4D4D; font-family:'walsheim_medium'; margin-bottom:0;} 
+
+.opc-sidebar .discount-code .payment-option-title{ display:none;}
+.opc-sidebar .discount-code .payment-option-content{ display:block !important;}
+
+.opc-sidebar .discount-code  #discount-form{ border:1px solid #ccc;}
+.opc-sidebar .discount-code  #discount-form:after{content: " "; display: table; clear:both;}
+.opc-sidebar .discount-code  #discount-form label.label{ display:none;}
+
+.opc-sidebar #discount-form .payment-option-inner{ float: left; width: 68%;}
+.opc-sidebar #discount-form .actions-toolbar{ float: right; text-align: right; width: 30%;}
+
+.opc-sidebar #discount-form input#discount-code{ background:none; border:none !important;}
+
+.opc-sidebar #discount-form .actions-toolbar .primary{ float:none !important;}
+.opc-sidebar #discount-form button.action{background:none; border: medium none; font-size: 12px; line-height: 32px; text-decoration:underline; margin: 0; min-width: inherit; padding-bottom: 0 !important; padding-left: 0 !important; padding-right: 10px; padding-top: 0 !important; text-align: right; color:#b3b3b3;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============Cart Empty===============*/
+
+.checkout-cart-index .header-top{ background:url(../images/shop-banner.jpg) center top no-repeat; background-size:100%; position:static;}
+.checkout-cart-index .header-top.sticky{ background:#fff;} 
+
+.cart-empty{ text-align:center; padding:70px 0;}
+.cart-empty p{ font-size:18px; line-height:24px; color:#4D4D4D;}
+.cart-empty p a{ color:#54C0D1;}
+
+
+
+/*===============Checkout Success===============*/
+
+
+
+.checkout-success{ padding:70px 0; }
+
+.checkout-success h2.order-title{ font-size:28px; line-height:32px; color:#4D4D4D; font-family:'walsheim_medium'; padding-bottom:15px; border-bottom:1px solid #B3B3B3; margin-bottom:20px;}
+
+.checkout-success p{ font-size:18px; line-height:22px; color:#B3B3B3; font-family:'walsheim_medium'; padding-bottom:25px;}
+.checkout-success p span{ color:#4D4D4D; padding-left:40px;}
+
+.checkout-success h2.cant-wait{ font-size:28px; line-height:32px; color:#56C7D8; font-family: 'walsheim_medium_italic';}
+
+.checkout-success .actions-toolbar{ margin-top:90px;}
+.checkout-success .actions-toolbar a.continue{ border:2px solid #56C7D8; color:#56C7D8; background:#fff; padding:8px 15px; font-size:18px; line-height:24px; font-family:"walsheim_medium"; border-radius:10px; -moz-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px;}
+.checkout-success .actions-toolbar a.continue:hover{background:#56C7D8; text-decoration:none; border:2px solid #56C7D8; color:#fff; transition:all .3s; -moz-transition:all .3s; -webkit-transition:all .3s; -o-transition:all .3s;}
+
+.checkout-success .transaction-success{ text-align:center; padding-bottom:100px;}
+.checkout-success .transaction-success h2{ font-size:24px; line-height:28px; color:#54C0D1; padding-right:60px; background:url(../images/transaction-icon.png) right center no-repeat; display:inline-block; line-height:48px; font-family:"walsheim_medium";}
+
+
+
+
+/*=========================Tearms Page=========================*/
+
+.cms-terms-conditions .header-top{ position:static;}
+.cms-terms-conditions .header-top .logo{ display:none;}
+.cms-terms-conditions .header-top .stikey-logo{ display:block !important;}
+.cms-terms-conditions .header-top .menu-main-sec ul li a{ color:#4d4d4d;}
+.cms-terms-conditions .header-top .top-cart a.showcart{background:url(../images/to-cart-blk.png) left center no-repeat;}
+.cms-terms-conditions .minicart-wrapper .action.showcart .counter.qty{color:#4d4d4d;}
+.cms-terms-conditions .header-top .top-cart{ border-color:#4d4d4d;}
+
+.cms-terms-conditions .mobile-nav a.toggle-icon{ background-image:url(../images/menu-icon-sticky.png);}
+
+
+.terms-sec{ color:#4D4D4D; }
+.terms-sec .container{ width:80%;}
+
+
+.hugo-trial{ padding-bottom:60px;}
+
+.terms-sec h2.teams-title{ background:#56C7D8; color:#fff; font-size:28px; line-height:32px; padding:35px 0; text-align:center; font-family: 'walsheim_medium'; margin-bottom:60px;}
+
+.terms-sec p{ font-size:18px; line-height:22px; color:#4D4D4D; font-family: 'walsheim_medium';}
+.terms-sec p span,
+.terms-sec table span{ color:#56c7d8;}
+
+.terms-sec p.gray{ color:#808080;}
+.terms-sec table{ font-size:18px; line-height:22px;}
+.terms-sec table tr td{ padding:10px 5px; vertical-align:top;}
+.terms-sec table tr td:first-child{font-family:'walsheim_medium';}
+
+.terms-sec table.name-table td:first-child{ width:20%;}
+.terms-sec table.number td:first-child{ width:8%;}
+
+.terms-sec .terms-top{ padding-bottom:40px; margin-bottom:50px; border-bottom:1px dotted #4D4D4D; }
+
+.terms-sec h3{ font-size:24px; line-height:28px; color:#56C7D8; font-family:'walsheim_medium'; margin-bottom:25px;}
+.terms-sec h4{ font-size:21px; line-height:25px; color:#4D4D4D; font-family:'walsheim_medium'; margin-bottom:20px;}
+
+.terms-sec .terms-conditions table{ padding-bottom:50px; border-bottom:1px dotted #4d4d4d; margin-bottom:50px;}
+.terms-sec .terms-conditions table tr:last-child > td{ padding-bottom:50px;}
+
+.terms-sec .terms-conditions table.inner-table { border:none; margin-bottom:0;}
+.terms-sec .terms-conditions table.inner-table tr:last-child td{ padding-bottom:0;}
+
+.terms-sec table ul{ padding-left:25px;}
+.terms-sec table ul li{ margin-bottom:15px;}
+.terms-sec table ul li:last-child{ margin-bottom:0;}
+
+.privacy-top{ padding-bottom:50px; margin-bottom:50px; border-bottom:1px dotted #4d4d4d;}
+
+.privacy-policy table{  padding-bottom:50px; border-bottom:1px dotted #4d4d4d; margin-bottom:50px;}
+.terms-sec .privacy-policy table tr:last-child > td{ padding-bottom:50px;}
+.terms-sec p.border{padding-bottom:50px; border-bottom:1px dotted #4d4d4d; margin-bottom:50px;}
+
+
+.contact-us{ text-align:center; padding-bottom:70px;}
+.contact-us h5{ font-size:18px; line-height:22px; font-family:'walsheim_medium'; color:#4d4d4d;}
+.contact-us p{font-family: 'walsheim_regular'; font-size:18px; line-height:24px; margin-bottom:25px;}
+.contact-us p a{color:#4d4d4d;}
+.contact-us p span{font-family:'walsheim_medium'; }
+
+
+
+
+
+
+/*===============Mobile Menu===============*/
+
+
+.mobile-menu-new{ display:none; position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(83, 192, 208, 0.9); padding:80px 0 0; z-index:99;}
+.mobile-menu-new li{ margin-bottom:0;}
+.mobile-menu-new li a{ color:#fff; font-size:20px; line-height:24px; display:block; padding:15px 10px; text-decoration:none; border-bottom:1px solid rgba(255, 255, 255, 0.5); text-align:left;}
+
+.mobile-nav {
+	display:none;
+	text-align:left;
+	padding-bottom:10px;
+	width:40px;
+	position:relative;
+}
+
+
+.mobile-nav a.toggle-icon {
+	background-color:transparent;
+	background-image:url(../images/menu-icon.png);
+	background-position: 95% center;
+	background-repeat:no-repeat;
+	color:#fff;
+	display:block;
+	height:40px;
+	width:100%;
+	line-height:40px;
+	font-weight:700;
+	font-size:16px;
+	text-decoration:none;
+	border-radius:5px 5px 0 0;
+	text-indent:-99999px;
+	outline:none;
+}
+.mobile-nav a.toggle-icon.close-icon{ background-image:url(../images/menu-close.png);}
+.sticky .mobile-nav a.toggle-icon.close-icon{ background-image:url(../images/menu-close-sticky.png);}
+
+.sticky .mobile-nav a.toggle-icon{ background-image:url(../images/menu-icon-sticky.png);}
+
+.mobile-nav #mob-menu {
+	background:#4d4d4d;
+	border-top:1px solid #fff;
+	position:absolute;
+	right:0; top:40px; width:200px;
+}
+.mobile-nav #mob-menu ul{
+	padding:0;
+	margin:0;
+}
+.mobile-nav #mob-menu ul li{
+	list-style:none;
+	position: relative;
+	display:block;
+	float:none;
+}
+.mobile-nav #mob-menu ul li a {
+	padding:10px 20px;
+	text-transform:uppercase;
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	font-weight:600;
+	border-bottom:1px solid #fff;
+	background:none;
+	margin:0;
+	border-radius:0; -moz-border-radius:0; -o-border-radius:0; -webkit-border-radius:0;
+}
+.mobile-nav #mob-menu ul li a:hover  {
+	background-color:#54c0d1;
+	color:#fff;
+transition:all .3s;
+-moz-transition:all .3s;
+-o-transition:all .3s;
+-webkit-transition:all .3s;
+}
+.mobile-nav #mob-menu ul ul li a {
+	padding-left:40px;
+}
+.mobile-nav #mob-menu ul li ul {
+	display:none;
+	position:absolute;
+	top:41px;
+	left:0;
+	z-index:999;
+	list-style-type: none;
+	width:200px;
+	background: #ffffff;
+	border-top:6px solid#eb5255;
+	margin:0;
+	padding:0;
+}
+.mobile-nav #mob-menu ul li ul li {
+	width:100%;
+}
+.mobile-nav #mob-menu ul li ul li:hover {
+	background-color:#e3e3e3;
+}
+.mobile-nav #mob-menu ul li ul li:hover a {
+	color:#eb5255;
+	background:none;
+}
+.mobile-nav #mob-menu ul li:hover ul,
+.mobile-nav #mob-menu1 ul li:hover ul {
+	display:block;
+}
+.mobile-nav #mob-menu ul li ul li a{
+	text-decoration:none;
+	color:#2d3e50;
+	font-family: 'PT Sans', sans-serif;
+	font-weight:400;
+	font-size:14px;
+	padding:8px;
+}
+
+

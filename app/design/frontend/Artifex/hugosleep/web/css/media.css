@@ -1,0 +1,805 @@
+
+@media (min-width: 1200px) {
+.terms-sec .container{ width:56%;}	
+	
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+/*===================Home===================*/
+
+.banner-detail-sec{ min-height:530px !important; padding-top:200px;}
+.banner-detail-sec .banner-text-sec h2{ font-size:40px; line-height:44px;}
+.banner-detail-sec .banner-text-sec p{ font-size:24px; line-height:30px;}
+
+.flvour-sec{ padding:150px 0;}
+.flvour-sec h2{ font-size:40px; line-height:44px;}
+.flvour-sec p{ font-size:24px; line-height:30px;}	
+
+
+.deliver-sec{ padding:150px 0;}
+.deliver-sec h2{ font-size:40px; line-height:44px;}
+.deliver-sec p{ font-size:24px; line-height:30px;}
+
+.rest-assured-sec{ padding:150px 0;}
+.rest-assured-sec .assured-details h2{ font-size:40px; line-height:44px;}
+.rest-assured-sec .assured-details p{ font-size:24px; line-height:30px;}
+
+.countsheet-sec{ padding:150px 0;}
+.countsheet-sec h2{ font-size:40px; line-height:44px;}
+.countsheet-sec p{ font-size:24px; line-height:30px;}
+
+
+/*===================About Us===================*/
+
+.hugo-like-sec{ padding:60px 0;}
+.hugo-like-sec .like-row{ width:95%; margin-top:50px;}
+
+.enter-hugo-sec{ padding:60px 0;}
+
+.sleep-easy-sec{ padding:100px 0;}
+
+
+/*===================Mattress===================*/
+
+
+.prices-fair-sec{ padding:100px 0;}
+.just-medium-sec{ padding:100px 0;}
+.bounce-cool-sec{ padding:100px 0;}
+
+.guts-hugo-sec{ padding:100px 0;}
+.guts-hugo-sec .guto-block .guto-image{ width:50%;}
+
+.free-delivery-sec{ padding:100px 0;}
+
+
+/*===================Support===================*/
+
+.support-content #contact-form{ width:80%;}
+.faq-sec .faq-post-list{ width:80%;}
+
+/*===================Shop===================*/
+
+.hugo-special-sec{ padding:100px 0;}
+
+/*===================Tearms Page===================*/
+.terms-sec .container{ width:74%;}
+
+.terms-sec table.name-table td:first-child{ width:20%;}
+
+
+
+	
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+/*===================Home===================*/
+
+.banner-detail-sec{ min-height:398px !important; padding-top:125px;}
+.banner-detail-sec .banner-text-sec h2{ font-size:40px; line-height:44px;}
+.banner-detail-sec .banner-text-sec p{ font-size:24px; line-height:30px;}
+
+.flvour-sec{ padding:90px 0;}
+.flvour-sec .flvour-text{ width:60%; float:right;}
+.flvour-sec h2{ font-size:40px; line-height:44px;}
+.flvour-sec p{ font-size:24px; line-height:30px;}	
+
+
+.deliver-sec{ padding:150px 0;}
+.deliver-sec h2{ font-size:40px; line-height:44px;}
+.deliver-sec p{ font-size:24px; line-height:30px;}
+
+.rest-assured-sec{ padding:150px 0;}
+.rest-assured-sec .assured-details h2{ font-size:40px; line-height:44px;}
+.rest-assured-sec .assured-details p{ font-size:24px; line-height:30px;}
+
+.countsheet-sec{ padding:150px 0;}
+.countsheet-sec h2{ font-size:40px; line-height:44px;}
+.countsheet-sec p{ font-size:24px; line-height:30px;}
+
+
+/*===================About Us===================*/
+
+.hugo-like-sec{ padding:60px 0;}
+.hugo-like-sec .like-row{ width:95%; margin-top:50px;}
+
+.hugo-like-sec .like-row .like-text{ width:55%;}
+.hugo-like-sec .like-text h3{ font-size:22px; line-height:30px;}
+.hugo-like-sec .like-text p{ font-size:18px; line-height:24px;}
+
+.enter-hugo-sec .enter-block{ width:70%;}
+
+.enter-hugo-sec{ padding:60px 0;}
+
+.sleep-easy-sec{ padding:100px 0;}
+
+
+/*===================Mattress===================*/
+
+.prices-fair-sec{ padding:100px 0;}
+
+.just-medium-sec{ padding:100px 0;}
+.just-medium-sec h2{ font-size:40px; line-height:44px;}
+
+.bounce-cool-sec{ padding:100px 0;}
+.bounce-cool-sec .bc-block h2{ font-size:28px; line-height:30px;}
+.bounce-cool-sec .bc-block p{ font-size:20px;}
+
+.guts-hugo-sec{ padding:100px 0;}
+.guts-hugo-sec .guto-block .guto-image{ width:50%; padding-right:10px;}
+.guts-hugo-sec .guto-block .guto-text{ padding-left:10px;}
+.guts-hugo-sec .guto-block h2{ margin-bottom:25px;}
+.guts-hugo-sec .guto-block p{ font-size:18px; line-height:20px; margin-bottom:10px;}
+
+.mat-details-sec table{ width:90%;}
+
+.free-delivery-sec{ padding:100px 0;}
+.free-delivery-sec h2{ font-size:40px; line-height:44px;}
+
+
+/*===================Support===================*/
+
+.support-content #contact-form{ width:100%;}
+.faq-sec .faq-post-list{ width:100%;}
+
+
+/*===================Shop===================*/
+
+.product-info-main .product-add-form .swatch-option.text{ margin:0 10px; width:145px;}
+
+.hugo-special-sec{ padding:100px 0; background-position:right center;}
+
+
+/*===================Checkout===================*/
+
+.checkout-container .opc-wrapper{ padding-right:30px; width:55%;}
+.opc-sidebar{ width:45% !important;}
+
+#shipping-new-address-form > .field{ width:100% !important; float:none !important;}
+#billing-new-address-form > .field{ width:100% !important; float:none !important;}
+
+
+/*===================Tearms Page===================*/
+
+.terms-sec table.name-table td:first-child{ width:20%;}
+.terms-sec .container{ width:750px;}
+
+
+
+		
+
+
+}
+
+
+@media (min-width: 600px) and (max-width: 767px) {
+	
+	
+/*===================Home===================*/	
+
+.banner-detail-sec{ background-size:cover; min-height:auto !important; padding:175px 0;}
+
+.menu-main-sec .desktop-menu{ display:none;}	
+.menu-main-sec .mobile-nav{ display:block;}
+
+.header-top .logo{ margin-left:0; width:30%; float:left;}
+.header-top .header-right{float:right; width:auto;}
+
+.header-top .top-cart{ padding-left:0; float:left; border-left:0;}
+.header-top.sticky .top-cart{ border-left:0; padding-left:0;}
+.header-top .menu-main-sec{ float:left; margin-right:10px;}
+
+.flvour-sec{ padding:30px 0;}
+.flvour-sec .flvour-text{ width:62%; float:right;}
+.flvour-sec h2{ font-size:40px; line-height:42px;}
+.flvour-sec p{ font-size:24px; line-height:30px;}
+
+
+.deliver-sec{ padding:150px 0;}
+.deliver-sec .container{ width:62%;}
+
+.rest-assured-sec{ padding:90px 0;}
+
+.countsheet-sec{ padding:70px 0;}	
+.countsheet-sec .container{ width:90%;}
+
+
+
+/*===================About Us===================*/
+
+.hugo-like-sec{ padding:100px 0 60px;}
+.hugo-like-sec .like-row{ width:95%; margin-top:50px;}
+
+.hugo-like-sec .like-row .like-text{ width:55%;}
+.hugo-like-sec .like-text h3{ font-size:22px; line-height:30px;}
+.hugo-like-sec .like-text p{ font-size:18px; line-height:24px;}
+
+.enter-hugo-sec .enter-block{ width:70%;}
+
+.enter-hugo-sec{ padding:60px 0;}
+
+.sleep-easy-sec{ padding:100px 0;}
+
+.hugo-like-sec .like-row .like-image{ display:block; width:100%; margin-bottom:45px;}
+.hugo-like-sec .like-row .like-text{ display:block; width:100%;}
+
+.hugo-like-sec .like-row .mobile-show{ display:block;}
+.hugo-like-sec .like-row .mobile-hide{ display:none;}
+
+
+/*===================Mattress===================*/
+
+.cms-mattress .banner-detail-sec .banner-text-sec h2{ width:68%; margin:0 auto;}
+
+.prices-fair-sec h2{ font-size:48px; line-height:50px; margin:0 auto 80px; width:80%;}
+.prices-fair-sec .mobile-show{ display:block;}
+.prices-fair-sec .mobile-hide{ display:none;}
+
+.just-medium-sec{ padding:130px 0;}
+.just-medium-sec h2{ font-size:56px; line-height:56px;}
+.just-medium-sec p{ font-size:30px; line-height:34px;}
+.just-medium-sec p br{ display:none;}
+
+.bounce-cool-sec{ padding:150px 0 60px;}
+.bounce-cool-sec .bc-block{ margin-bottom:90px;}
+.bounce-cool-sec .bc-block .image{ margin-bottom:50px;}
+.bounce-cool-sec .bc-block h2{ font-size:48px; line-height:50px;}
+.bounce-cool-sec .bc-block p{ font-size:30px; line-height:34px;}
+
+.guts-hugo-sec{ padding:150px 0;}
+.guts-hugo-sec .guto-block .guto-image{ width:100%; display:block; padding-bottom:50px;}
+.guts-hugo-sec .guto-block .guto-text{ width:100%; display:block;}
+
+.guts-hugo-sec .guto-block h2{ font-size:48px; line-height:50px;}
+.guts-hugo-sec .guto-block p{ font-size:30px; line-height:34px;}
+
+
+.mat-slide-sec{ padding:120px 0;}
+.mat-slide-sec .slider-block{ width:65%;}
+
+.mat-details-sec table{ width:100%;}
+.mat-details-sec table td.details .masurments li{ width:50%; padding:0 5px 10px;}
+.mat-details-sec table td.details p br{ display:none;}
+
+.free-delivery-sec{ padding:40px 0;}
+.free-delivery-sec .container{ width:90%;}
+.free-delivery-sec h2{ width:75%; margin:0 auto 20px;}
+.free-delivery-sec p{ font-size:30px; line-height:36px;}
+.free-delivery-sec p br{ display:none;}
+
+.free-delivery-sec .see-btn{ margin-top:50px;}
+
+
+
+/*===================Support===================*/
+
+.support-content #contact-form{ width:100%;}
+.faq-sec .faq-post-list{ width:100%;}
+
+.support-content #contact-form .actions-toolbar .primary{ text-align:left;}
+.support-content #contact-form .actions-toolbar .primary button.submit{ width:auto;}
+
+
+/*===================Shop===================*/
+
+.shop-top-title h2{ font-size:36px; line-height:44px;}
+.catalog-product-view .product.media{ order:0; margin-top:0; padding-bottom:80px;}
+
+.product.media h2.gallery-title{ margin-bottom:60px;}
+
+.page-layout-1column .product-info-main{ padding-left:15px; padding-right:25px;}
+.product-info-main .product-add-form .swatch-option.text{ width:46%; margin:0 2% 4%; font-size:28px; line-height:32px;}
+
+.product-options-wrapper .swatch-attribute.test{ min-height:330px;}
+.product-options-wrapper .swatch-attribute .swatch-attribute-selected-option{ top:270px;}
+
+.product-add-form .product-options-bottom button.tocart{ padding:12px 30px !important;}
+
+
+.hugo-special-sec{ padding:100px 0;}
+
+
+/*===================Checkout===================*/
+
+.header-checkout-top{ text-align:right;}
+
+.checkout-container .opc-wrapper{ width:100%; padding-right:0;}
+
+.checkout-payment-method .payment-method-content{ padding-left:0; padding-right:0;}
+
+#billing-new-address-form{ max-width:inherit;}
+.checkout-payment-method .payment-methods{ margin:0;}
+
+.checkout-payment-method .payment-method-title{ padding:15px 0; }
+.opc-estimated-wrapper{ padding-left:0; padding-right:0;}
+.checkout-container .actions-toolbar .primary{ float:none !important;}
+
+.checkout-container .actions-toolbar button.action-cancel{ margin-right:0;}
+
+
+/*===================Tearms Page===================*/
+
+.terms-sec .container{ width:95%;}
+	
+	
+}
+
+@media (max-width: 599px) {
+	
+
+/*===================Home===================*/	
+	
+.banner-detail-sec{ background-size:cover; min-height:auto !important; padding:175px 0;}
+
+.menu-main-sec .desktop-menu{ display:none;}	
+.menu-main-sec .mobile-nav{ display:block;}
+
+.minicart-wrapper{ margin-top:3px;}
+
+.header-top .logo{ margin-left:0; width:45%; float:left;}
+.header-top .header-right{float:right; width:auto;}
+
+.header-top .top-cart{ padding-left:0; float:left; border-left:0;}
+.header-top.sticky .top-cart{ border-left:0; padding-left:0;}
+.header-top .menu-main-sec{ float:left; margin-right:10px;}
+
+.flvour-sec{ padding:30px 0;}
+.flvour-sec .flvour-text{ width:62%; float:right;}
+.flvour-sec h2{ font-size:34px; line-height:36px;}
+.flvour-sec p{ font-size:20px; line-height:28px;}
+
+
+.deliver-sec{ padding:80px 0;}
+.deliver-sec .container{ width:80%;}
+
+.rest-assured-sec{ padding:60px 0;}
+.rest-assured-sec .assured-details p{ font-size:20px; line-height:28px;}
+
+.countsheet-sec{ padding:70px 0;}	
+.countsheet-sec p{ font-size:24px; line-height:30px;}
+.countsheet-sec .container{ }
+
+
+.footer-container .newslatter-block input[type="email"]{ width:100%;}
+
+
+/*===================About Us===================*/
+
+.cms-about .banner-detail-sec .banner-text-sec p br{ display:none;}
+
+.hugo-like-sec{ padding:60px 0;}
+.hugo-like-sec .like-row{ width:95%; margin-top:50px;}
+
+.hugo-like-sec .like-row .like-text{ width:55%;}
+.hugo-like-sec .like-text h3{ font-size:22px; line-height:30px;}
+.hugo-like-sec .like-text p{ font-size:18px; line-height:24px;}
+
+.enter-hugo-sec .enter-block{ width:70%;}
+
+.enter-hugo-sec{ padding:60px 0;}
+
+.sleep-easy-sec{ padding:100px 0;}
+.sleep-easy-sec h2{ font-size:40px; line-height:42px;}
+.sleep-easy-sec h3{ font-size:22px; line-height:30px;}
+
+.hugo-like-sec .like-row .like-image{ display:block; width:100%; margin-bottom:45px;}
+.hugo-like-sec .like-row .like-text{ display:block; width:100%;}
+
+.hugo-like-sec .like-row .mobile-show{ display:block;}
+.hugo-like-sec .like-row .mobile-hide{ display:none;}
+
+
+/*===================Mattress===================*/
+
+
+.cms-mattress .banner-detail-sec .banner-text-sec h2{ width:80%; margin:0 auto;}
+
+.prices-fair-sec{ padding:100px 0;}
+.prices-fair-sec .mobile-show{ display:block;}
+.prices-fair-sec .mobile-hide{ display:none;}
+
+.just-medium-sec{ padding:100px 0;}
+
+.bounce-cool-sec{ padding:100px 0 30px;}
+.bounce-cool-sec .bc-block .image{ margin-bottom:50px;}
+.bounce-cool-sec .bc-block{ margin-bottom:70px;}
+
+.guts-hugo-sec{ padding:100px 0;}
+.guts-hugo-sec .guto-block .guto-image{ width:100%; display:block; padding-bottom:50px;}
+.guts-hugo-sec .guto-block .guto-text{ width:100%; display:block;}
+
+.mat-slide-sec{ padding:80px 0;}
+.mat-slide-sec .slider-block .image{ margin-bottom:30px;}
+.mat-slide-sec .slider-block{ width:75%;}
+
+.mat-details-sec table{ width:100%;}
+.mat-details-sec table td.details .masurments li{ width:50%; padding:0 5px 10px;}
+.mat-details-sec table td.details p br{ display:none;}
+
+.free-delivery-sec{ padding:40px 0;}
+.free-delivery-sec .container{ width:90%;}
+.free-delivery-sec h2{ width:75%; margin:0 auto 20px;}
+.free-delivery-sec p{ }
+.free-delivery-sec p br{ display:none;}
+
+.free-delivery-sec .see-btn{ margin-top:50px;}
+
+
+/*===================Support===================*/
+
+.support-content #contact-form{ width:100%; padding:50px 0;}
+.faq-sec .faq-post-list{ width:100%;}
+
+.support-content #contact-form .actions-toolbar .primary{ text-align:left;}
+.support-content #contact-form .actions-toolbar .primary button.submit{ width:auto;}
+
+
+/*===================Shop===================*/
+
+.shop-top-title h2{ font-size:36px; line-height:44px;}
+.catalog-product-view .product.media{ order:0; margin-top:0; padding-bottom:60px; padding-top:60px;}
+
+.hugo-special-sec h2{ font-size:36px; line-height:42px;}
+.hugo-special-sec p{ font-size:20px; line-height:26px;}
+
+.product.media h2.gallery-title{ margin-bottom:60px;}
+
+.page-layout-1column .product-info-main{ padding-left:15px; padding-right:25px;}
+.product-info-main .product-add-form .swatch-option.text{ width:46%; margin:0 2% 4%; font-size:28px; line-height:32px;}
+
+.product-options-wrapper .swatch-attribute.test{ min-height:330px;}
+.product-options-wrapper .swatch-attribute .swatch-attribute-selected-option{ top:270px;}
+
+.product-add-form .product-options-bottom button.tocart{ padding:12px 30px !important;}
+
+
+.hugo-special-sec{ padding:100px 0;}
+.shop-slide-sec{ padding:60px 0;}
+
+
+/*===================Checkout===================*/
+
+#shipping-new-address-form > .field{ width:100% !important; float:none !important;}
+#billing-new-address-form > .field{ width:100% !important; float:none !important;}
+
+
+.opc-estimated-wrapper .estimated-block .estimated-label{ font-size:24px; line-height:28px;}
+.opc-estimated-wrapper .estimated-block .estimated-price{ font-size:18px; line-height:20px;}
+
+.opc-estimated-wrapper .minicart-wrapper button.showcart{ background-size:40px auto; padding:4px 15px 4px 70px;}
+.opc-estimated-wrapper .minicart-wrapper button.showcart span.counter.qty{ height:40px; line-height:40px; width:40px; font-size:24px;}
+
+
+.checkout-container .opc-wrapper{ width:100%; padding-right:0;}
+
+.checkout-payment-method .payment-method-content{ padding-left:0; padding-right:0;}
+
+#billing-new-address-form{ max-width:inherit;}
+.checkout-payment-method .payment-methods{ margin:0;}
+
+.checkout-payment-method .payment-method-title{ padding:15px 0; }
+.opc-estimated-wrapper{ padding-left:0; padding-right:0;}
+.checkout-container .actions-toolbar .primary{ float:none !important;}
+
+.checkout-container .actions-toolbar button.action-cancel{ margin-right:0;}
+
+
+/*===================Tearms Page===================*/
+
+.terms-sec .container{ width:95%;}
+	
+
+
+
+
+
+
+}
+
+@media (max-width: 480px) {
+	
+
+/*===================Home===================*/
+	
+.flvour-sec .flvour-text{ width:100%; float:none; background:rgba(255,255,255,.5); padding:10px;}
+
+.deliver-sec{ background-attachment:inherit;}
+.deliver-sec h2{ font-size:46px; line-height:48px;}
+.rest-assured-sec .assured-details p br{ display:none;}
+
+
+.rest-assured-sec{ background-attachment:inherit;}
+
+.countsheet-sec{ background-attachment:inherit;}
+.countsheet-sec p br{ display:none;}
+
+.footer-container .newslatter-block{ clear:both; overflow:hidden;}
+.footer-container .newslatter-block .control{ width:68%; float:left; padding-right:10px;} 
+.footer-container .newslatter-block .actions{ width:30%; float:left;}
+.footer-container .newslatter-block button.subscribe{ padding:0; width:100%; margin-left:0;}
+.footer-container .newslatter-block input[type="email"]{ background-position:10px center; padding-left:40px; padding-right:10px; font-size:14px; width:100%;}
+
+.footer-container .footer-links ul li a{ padding:0 10px; font-size:14px;}
+.footer-container .newslatter-block input[type="email"]{ width:100%; font-size:14px;}
+
+
+/*===================About Us===================*/
+
+.hugo-like-sec h2{ font-size:30px; line-height:30px;}
+.enter-hugo-sec h2{ font-size:30px; line-height:30px;}
+
+.sleep-easy-sec{ background-attachment:inherit;}	
+
+/*===================Mattress===================*/
+
+.cms-mattress .banner-detail-sec .banner-text-sec h2{ width:90%;}
+
+.just-medium-sec{ background-attachment:inherit;}
+.just-medium-sec h2{ font-size:44px; line-height:48px;}
+.just-medium-sec p br{ display:none;}
+
+.mat-slide-sec .slider-block{ width:85%;}
+
+.mat-details-sec table td.details p br{ display:block;}
+.mat-details-sec table td.details{ font-size:16px;}
+
+.free-delivery-sec .container{ width:100%;}
+.free-delivery-sec h2{ width:100%;}
+
+
+/*===================Support===================*/
+
+.support-content > h2{ font-size:32px;}
+.faq-sec h2{ font-size:32px;}
+
+.faq-post-list .accordion-section .accordion-section-title{ font-size:20px;}
+
+
+/*===================Shop===================*/
+
+.shop-top-title h2{ font-size:32px; line-height:38px;}
+
+.hugo-special-sec{ background-attachment:inherit; background-position:80% top;}
+
+
+/*===================Checkout===================*/
+.header-checkout-top{ text-align:right;}
+
+
+	
+}
+
+@media (max-width: 375px) {
+
+/*===================Home===================*/
+
+.top-cart .minicart-wrapper .block-minicart{ width:290px;}
+	
+.banner-detail-sec .banner-text-sec h2{ font-size:40px; line-height:44px;}
+.banner-detail-sec .banner-text-sec p{ font-size:22px; line-height:28px;}
+.flvour-sec{ background-size:cover;}
+
+.deliver-sec{ background-attachment:inherit;}
+.deliver-sec .container{ width:100%;}
+.deliver-sec h2{ font-size:40px; line-height:44px;}
+.deliver-sec p{ font-size:22px; line-height:28px;}	
+
+.rest-assured-sec{ background-attachment:inherit;}
+.rest-assured-sec .assured-details h2{ font-size:40px; line-height:44px;}
+.rest-assured-sec .assured-details p{ font-size:22px; line-height:28px;}
+
+.countsheet-sec{ background-attachment:inherit;}
+.countsheet-sec h2{ font-size:40px; line-height:44px;}
+.countsheet-sec p{ font-size:22px; line-height:28px;}
+
+.footer-container .footer-links ul li a{ font-size:13px; line-height:18px; padding:0 7px;}
+
+.footer-container .newslatter-block{ clear:both; overflow:hidden;}
+.footer-container .newslatter-block .control{ width:68%; float:left; padding-right:10px;} 
+.footer-container .newslatter-block .actions{ width:30%; float:left;}
+.footer-container .newslatter-block button.subscribe{ padding:0; width:100%; margin-left:0;}
+.footer-container .newslatter-block input[type="email"]{ background-position:10px center; padding-left:40px; padding-right:10px; font-size:14px; width:100%;}
+
+.footer-container .copy-right a{ display:block;}
+
+
+/*===================About Us===================*/
+
+.hugo-like-sec .like-text p br{ display:none;}
+.hugo-like-sec .like-text h3 br{ display:none;}
+.hugo-like-sec .like-row{ width:100%;}
+.enter-hugo-sec .enter-block{ width:100%;}
+
+.sleep-easy-sec{ background-attachment:inherit;}
+
+/*===================Mattress===================*/
+
+.prices-fair-sec{ padding:80px 0;}
+
+.just-medium-sec h2{ font-size:34px; line-height:38px;}
+.just-medium-sec p{ font-size:20px; line-height:24px;}
+
+.guts-hugo-sec .guto-block{ width:100%;}
+.guts-hugo-sec .guto-block p{ font-size:20px; line-height:24px;}
+
+.mat-slide-sec .slider-block{ width:100%;}
+
+.mat-details-sec table td.title{ border-bottom:none; padding-bottom:0;}
+.mat-details-sec table td{ width:100% !important; display:block;}
+.mat-details-sec table td.details .masurments{ clear:both; overflow:hidden;}
+
+.free-delivery-sec h2{ font-size:40px; line-height:44px;}
+.free-delivery-sec p{ font-size:22px;}
+
+/*===================Support===================*/
+
+.faq-post-list .accordion-section .accordion-section-title{ font-size:18px;}
+.faq-post-list .accordion-section .accordion-section-content{ font-size:16px;}
+
+.support-content > h2{ font-size:25px; padding:20px 0;}
+.faq-sec h2{ font-size:25px; padding:20px 0;}
+
+
+/*===================Shop===================*/
+
+
+.shop-top-title{ padding:25px 0;}
+.shop-top-title h2{ font-size:24px; line-height:30px;}
+
+
+.product.media h2.gallery-title{ font-size:28px; line-height:28px;}
+
+.product-info-main .product-add-form .swatch-option.text{ font-size:20px; line-height:20px;}
+
+.product-options-wrapper .swatch-attribute.test{ min-height:280px;}
+.product-options-wrapper .swatch-attribute .swatch-attribute-selected-option{ top:220px;}
+
+.hugo-special-sec{ padding:60px 0; background-attachment:inherit; background-position:right center;}
+
+
+/*===================Checkout===================*/
+
+.header-checkout-top h2.checkout-title{ font-size:26px; margin-left:0; margin-top:2px;}
+
+.opc-estimated-wrapper .minicart-wrapper button.showcart{ background-size:30px auto; padding:4px 10px 4px 50px; background-position:10px center;}
+.opc-estimated-wrapper .minicart-wrapper button.showcart span.counter.qty{ height:30px; line-height:30px; width:30px; font-size:18px;}
+
+
+
+.opc-sidebar #discount-form .payment-option-inner{ width:60%;}
+.opc-sidebar #discount-form .actions-toolbar{ width:40%;}
+
+
+}
+
+
+@media (max-width: 320px) {
+
+
+/*===================Home===================*/
+
+.top-cart .minicart-wrapper .block-minicart{ width:250px;}
+
+.flvour-sec h2{ font-size:30px; line-height:34px;}	
+.flvour-sec p br{ display:none;}	
+
+.footer-container .newslatter-block input[type="email"]{ font-size:12px; width:100%;}
+
+
+/*===================About Us===================*/
+
+.hugo-like-sec .like-row .like-image{ margin-bottom:15px;}
+
+
+/*===================Mattress===================*/
+
+.cms-mattress .banner-detail-sec .banner-text-sec h2{ width:100%;}
+
+.prices-fair-sec h2{ font-size:30px;}
+
+.just-medium-sec h2{ font-size:30px;}
+.just-medium-sec p{ font-size:18px;}
+
+.bounce-cool-sec .bc-block h2{ font-size:30px; line-height:30px;}
+.bounce-cool-sec .bc-block p{ font-size:18px; line-height:22px;}
+
+.guts-hugo-sec .guto-block h2{ font-size:30px; line-height:30px; margin-bottom:30px;}
+.guts-hugo-sec .guto-block p{ font-size:16px; line-height:20px; margin-bottom:10px;}
+
+/*===================Checkout===================*/
+
+.header-checkout-top h2.checkout-title{ font-size:24px; padding-right:40px; margin-left:0; margin-top:2px;}
+
+.opc-estimated-wrapper .estimated-block .estimated-label{ font-size:20px; line-height:24px;}
+.opc-estimated-wrapper .estimated-block .estimated-price{ font-size:16px; line-height:18px;}
+
+.checkout-payment-method .payment-method-title .label{ font-size:12px !important;}
+#checkoutSteps .payment-method-billing-address label{ font-size:12px;}
+
+.opc-sidebar #discount-form input#discount-code{ font-size:12px;}
+.opc-sidebar #discount-form button.action{ font-size:10px;}
+
+	
+}
+
+
+
+
+/*===================For Product Slider===================*/
+
+
+
+
+@media (max-width: 736px) {
+
+.more-views .owl-carousel .owl-stage-outer{ width:736px;}	
+
+}
+
+@media (max-width: 732px) {
+
+.more-views .owl-carousel .owl-stage-outer{ width:732px;}	
+
+}
+
+@media (max-width: 667px) {
+
+.more-views .owl-carousel .owl-stage-outer{ width:667px;}	
+
+}
+
+@media (max-width: 640px) {
+
+.more-views .owl-carousel .owl-stage-outer{ width:640px;}	
+
+}
+
+@media (max-width: 568px) {
+
+.more-views .owl-carousel .owl-stage-outer{ width:568px;}	
+
+}
+
+@media (max-width: 480px) {
+
+.more-views .owl-carousel .owl-stage-outer{ width:480px;}	
+
+}
+
+@media (max-width: 414px) {
+
+.more-views .owl-carousel .owl-stage-outer{ width:414px;}	
+
+}
+
+@media (max-width: 412px) {
+
+.more-views .owl-carousel .owl-stage-outer{ width:412px;}	
+
+}
+
+@media (max-width: 375px) {
+
+.more-views .owl-carousel .owl-stage-outer{ width:375px;}	
+
+}
+
+@media (max-width: 360px) {
+
+.more-views .owl-carousel .owl-stage-outer{ width:360px;}	
+
+}
+
+@media (max-width: 320px) {
+
+.more-views .owl-carousel .owl-stage-outer{ width:320px;}	
+
+}
+
+

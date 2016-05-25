@@ -1,0 +1,20 @@
+<?php 
+
+
+
+$product_id = 5; // Assign product id here
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$product = $objectManager->get('Magento\Catalog\Model\Product')->load($product_id);
+
+
+
+
+echo $product->getShortDescription(); //product's short description
+echo $product->getDescription(); // product's long description
+echo $product->getName(); //product name
+echo $product->getPrice(); //product's regular Price
+echo $product->getSpecialPrice(); //product's special Price
+echo $product->getProductUrl(); //product url
+
+
+?>
